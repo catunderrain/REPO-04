@@ -1,0 +1,1 @@
+py n:\\ghostcat\\gc_primary\\workspace_alpha\\sources\\py_memorytrainer\\main.py
