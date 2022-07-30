@@ -4,7 +4,7 @@ from datetime import date
 year = {}
 n = date.today().year
 # year[n] = open(f'{patha}\\samples\\years\\{n}.txt', 'a')
-# year[n].close()
+# year[n].close() #nothing
 
 year[n] = open(f'{patha}\\samples\\years\\{n}.txt', 'r')
 lines = year[n].readlines()
