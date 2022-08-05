@@ -196,14 +196,14 @@ def pool(img):
         x.append(max)
     for i in range(av):
         k = i*2
-        max = 0
+        max = numpy.uint8(0)
         for j in range(2):
             if b[j + k] > max:
                 max = b[j + k]
         y.append(max)
     for i in range(av):
         k = i*2
-        max = 0
+        max = numpy.uint8(0)
         for j in range(2):
             if c[j + k] > max:
                 max = c[j + k]
@@ -266,12 +266,8 @@ def gray(x):
     export(collapse(d, d, d))
 
 
-def main():
-    print('WELCOME!')
-    name = input('Your name of image: ')
-    imgdata = image.imread(f'{patha}\\samples\\photos\\{name}')
-    print('Base shape: ', imgdata.shape)
-    export(pool(imgdata), name='this')
-
-
-main()
+print('WELCOME!')
+name = input('Your name of image: ')
+imgdata = image.imread(f'{patha}\\samples\\photos\\{name}')
+print('Base shape: ', imgdata.shape)
+export(pool(imgdata), name='this')
