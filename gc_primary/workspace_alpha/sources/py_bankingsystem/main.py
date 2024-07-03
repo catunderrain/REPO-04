@@ -43,13 +43,11 @@ def getinfo(n):
     return Bank(u_list[n][0], u_list[n][1], u_list[n][2])
 
 
-VA = getinfo(0)
-TT = getinfo(1)
+TT = getinfo(0)
 
-VA.show_details()
 TT.show_details()
 
-VA.deposit(200)
-VA.withdraw(300)
-VA.withdraw(100)
-VA.view_balance()
+TT.deposit(200)
+TT.withdraw(300)
+TT.withdraw(100)
+TT.view_balance()
