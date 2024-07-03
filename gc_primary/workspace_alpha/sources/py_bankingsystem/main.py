@@ -36,7 +36,7 @@ class Bank(User):
         print("Account balance: £", self.cat)
 
 
-u_list = [['Van Anh', 22, 'Female'], ['Thai Toan', 21, 'Male']]
+u_list = [['Thai Toan', 21, 'Male']]
 
 
 def getinfo(n):
